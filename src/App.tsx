@@ -24,11 +24,28 @@ export type RootStackPramList = {
   Details: {product: Product}
 }
 
+const Stack = createNativeStackNavigator<RootStackPramList>()
 
 export default function App() {
   return (
-    <View>
-      <Text style={{color: 'red'}}>Hello World</Text>
-    </View>
+   <NavigationContainer>
+    <Stack.Navigator initialRouteName='Home'>
+    <Stack.Screen
+    name='Home'
+    component={Home}
+    options={{
+      title: 'Trending Products'
+    }}
+    />
+     <Stack.Screen
+    name='Details'
+    component={Details}
+    options={{
+      title: 'Products details'
+    }}
+    />
+
+    </Stack.Navigator>
+   </NavigationContainer>
   )
 }
