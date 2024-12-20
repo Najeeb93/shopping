@@ -5,4 +5,7 @@ interface Product {
     orignalPrice: number;
     discountPrice: number;
     offerPercentage: number;
+    rating: number;
+    ratingCount: number;
+    tags: string[]
 }
