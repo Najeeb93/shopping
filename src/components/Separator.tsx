@@ -4,11 +4,16 @@ import React from "react";
 
 export default function Separator() {
     return (
-        <View>
-            <Text>Separator</Text>
+        <View style={styles.separator}>
+          
         </View>
     )
        
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    separator: {
+        height: 0.8,
+        backgroundColor: '#CAD5E2'
+    }
+});
