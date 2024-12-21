@@ -1,8 +1,12 @@
 import {View, Text, StyleSheet} from 'react-native'
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 
 
-export default function ProductItem() {
+type ProductProps = PropsWithChildren<{
+    product: Product
+}>
+
+export default function ProductItem({product}: ProductProps) {
     return (
         <View>
             <Text>Product Item</Text>
