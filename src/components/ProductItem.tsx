@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet} from 'react-native'
+import {View, Text, StyleSheet, Image} from 'react-native'
 import React, { PropsWithChildren } from 'react'
 
 
@@ -8,10 +8,16 @@ type ProductProps = PropsWithChildren<{
 
 export default function ProductItem({product}: ProductProps) {
     return (
-        <View>
-            <Text>Product Item</Text>
+        <View style={styles.container}>
+            <Image
+            source={{uri: product.imageUrl}}
+            style={styles.image} 
+            />
+            <View>
+                <Text style={styles.name}>{product.name}</Text>
+            </View>
         </View>
     )
 };
 
-const style = StyleSheet.create({});
+const styles = StyleSheet.create({});
