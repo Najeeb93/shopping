@@ -17,7 +17,7 @@ export default function ProductItem({product}: ProductProps) {
                 <Text style={styles.name}>{product.name}</Text>
                 <View style={[styles.rowContainer, styles.ratingContainer]}>
                     <View>
-                        <Text></Text>
+                        <Text>{product.rating}</Text>
                     </View>
                 </View>
                 <View style={[styles.rowContainer, styles.priceContainer]}></View>
