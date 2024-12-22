@@ -15,7 +15,9 @@ export default function ProductItem({product}: ProductProps) {
             />
             <View>
                 <Text style={styles.name}>{product.name}</Text>
-                <View style={[styles.rowContainer, styles.ratingContainer]}></View>
+                <View style={[styles.rowContainer, styles.ratingContainer]}>
+                    <View></View>
+                </View>
                 <View style={[styles.rowContainer, styles.priceContainer]}></View>
             </View>
         </View>
