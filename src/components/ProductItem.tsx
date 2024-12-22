@@ -19,7 +19,7 @@ export default function ProductItem({product}: ProductProps) {
                     <View>
                         <Text style={styles.ratingText}>{product.rating}</Text>
                     </View>
-                    <Text>
+                    <Text style={styles.ratingCount}>
                         ({product.ratingCount.toLocaleString()})
                     </Text>
                 </View>
