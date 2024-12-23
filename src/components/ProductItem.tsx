@@ -23,7 +23,11 @@ export default function ProductItem({product}: ProductProps) {
                         ({product.ratingCount.toLocaleString()})
                     </Text>
                 </View>
-                <View style={[styles.rowContainer, styles.priceContainer]}></View>
+                <View style={[styles.rowContainer, styles.priceContainer]}>
+                    <Text style={styles.originalPrice}>
+                    ₹{product.originalPrice.toLocaleString()}
+                    </Text>
+                </View>
             </View>
         </View>
     )
