@@ -41,4 +41,13 @@ const styles = StyleSheet.create({
         margin: 8,
         flexDirection: 'row',
     },
+    rowContainer: {
+        flexDirection: 'row',
+    },
+    image: {
+        width: 90,
+        height: 150,
+        resizeMode: 'contain',
+        marginRight: 12,
+    },
 });
