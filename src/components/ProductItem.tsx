@@ -16,8 +16,8 @@ export default function ProductItem({product}: ProductProps) {
             <View>
                 <Text style={styles.name}>{product.name}</Text>
                 <View style={[styles.rowContainer, styles.ratingContainer]}>
-                    <View>
-                        <Text style={styles.ratingText}>{product.rating}</Text>
+                    <View style={styles.rating}>
+                        <Text style={styles.ratingText}>{product.rating}★</Text>
                     </View>
                     <Text style={styles.ratingCount}>
                         ({product.ratingCount.toLocaleString()})
