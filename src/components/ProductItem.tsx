@@ -50,4 +50,9 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
         marginRight: 12,
     },
+    name: {
+        marginBottom: 4,
+        fontSize: 15,
+        fontWeight:'500',
+    },
 });
