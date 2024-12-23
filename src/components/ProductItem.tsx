@@ -27,6 +27,9 @@ export default function ProductItem({product}: ProductProps) {
                     <Text style={styles.originalPrice}>
                     ₹{product.originalPrice.toLocaleString()}
                     </Text>
+                    <Text style={styles.offerPercentage}>
+                    %{product.offerPercentage} off
+                    </Text>
                 </View>
             </View>
         </View>
