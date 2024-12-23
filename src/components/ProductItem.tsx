@@ -36,4 +36,9 @@ export default function ProductItem({product}: ProductProps) {
     )
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    container: {
+        margin: 8,
+        flexDirection: 'row',
+    },
+});
