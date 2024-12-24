@@ -61,4 +61,11 @@ const styles = StyleSheet.create({
     priceContainer: {
         marginBottom: 12,
     },
+    rating: {
+        borderRadius: 4,
+        paddingHorizontal: 8,
+        justifyContent: 'center',
+        backgroundColor: '#008c00',
+        marginRight: 4,
+    },
 });
