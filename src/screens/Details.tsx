@@ -26,4 +26,18 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: '500',
     },
+    priceContainer: {
+        paddingVertical: 12,
+        paddingHorizontal: 12,
+        marginBottom: 12,
+        borderRadius: 6,
+        backgroundColor: '#deffeb',
+    },
+    rating: {
+        marginRight: 4,
+        borderRadius: 4,
+        paddingHorizontal: 8,
+        justifyContent: 'center',
+        backgroundColor: '#008c00',
+    },
 })
