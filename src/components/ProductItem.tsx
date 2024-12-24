@@ -55,4 +55,7 @@ const styles = StyleSheet.create({
         fontSize: 15,
         fontWeight:'500',
     },
+    ratingContainer: {
+        marginBottom: 12,
+    },
 });
