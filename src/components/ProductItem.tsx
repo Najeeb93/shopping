@@ -68,4 +68,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#008c00',
         marginRight: 4,
     },
+    ratingText: {
+        color: '#fff',
+        fontSize: 12,
+        fontWeight: '600',
+    },
 });
