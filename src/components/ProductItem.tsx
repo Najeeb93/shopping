@@ -56,6 +56,9 @@ const styles = StyleSheet.create({
         fontWeight:'500',
     },
     ratingContainer: {
+        marginBottom: 8,
+    },
+    priceContainer: {
         marginBottom: 12,
     },
 });
