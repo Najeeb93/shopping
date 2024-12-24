@@ -1,4 +1,4 @@
-import {View, Text} from 'react-native'
+import {View, Text, StyleSheet} from 'react-native'
 import React from 'react'
 
 //React navigation
@@ -10,9 +10,12 @@ import Separator from '../components/Separator'
 //data
 import { PRODUCTS_LIST } from '../data/constants'
 
+type HomeProps = NativeStackScreenProps<RootStackPramList, "Home" >
 
-export default function Home() {
+export default function Home({navigation}: HomeProps) {
     return (
         <View>Home</View>
     )
 }
+
+const styles = StyleSheet.create({});
