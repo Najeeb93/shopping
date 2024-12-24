@@ -18,4 +18,12 @@ export default function Home({navigation}: HomeProps) {
     )
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'flex-start',
+        justifyContent: 'center',
+        padding: 12,
+        backgroundColor: '#FFFFFF',
+    },
+});
