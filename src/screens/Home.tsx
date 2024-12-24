@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet} from 'react-native'
+import {View, Text, StyleSheet, FlatList, Pressable} from 'react-native'
 import React from 'react'
 
 //React navigation
@@ -14,7 +14,24 @@ type HomeProps = NativeStackScreenProps<RootStackPramList, "Home" >
 
 export default function Home({navigation}: HomeProps) {
     return (
-        <View>Home</View>
+        <View style={styles.container}>
+            <FlatList
+            data={PRODUCTS_LIST}
+            keyExtractor={item => item.id} 
+            ItemSeparatorComponent={Separator}
+            renderItem={({item}) => (
+                <Pressable
+                onPress={() => {
+                    navigation.navigate('Details', {
+                        product: item
+                    })
+                }}
+                >
+                    <ProductItem product={item} /> 
+                </Pressable>
+            )}
+            />
+        </View>
     )
 }
 
