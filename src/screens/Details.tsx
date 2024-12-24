@@ -18,4 +18,12 @@ const styles = StyleSheet.create({
         height: 450,
         resizeMode: 'contain',
     },
+    rowContainer: {
+        flexDirection: 'row',
+    },
+    name: {
+        marginBottom: 4,
+        fontSize: 20,
+        fontWeight: '500',
+    },
 })
