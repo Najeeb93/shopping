@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet} from 'react-native'
+import {View, Text, StyleSheet, Image} from 'react-native'
 import React from 'react'
 
 
@@ -12,5 +12,10 @@ const styles = StyleSheet.create({
     container: {
         paddingHorizontal: 18,
         backgroundColor: '#FFFFFF',
+    },
+    Image: {
+        width: 300,
+        height: 450,
+        resizeMode: 'contain',
     },
 })
