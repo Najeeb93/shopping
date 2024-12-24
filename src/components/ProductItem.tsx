@@ -73,4 +73,14 @@ const styles = StyleSheet.create({
         fontSize: 12,
         fontWeight: '600',
     },
+    ratingCount: {
+        color: '#878787',
+    },
+    originalPrice: {
+        fontSize: 18,
+        marginRight: 4,
+        fontWeight: '600',
+        color: 'rgba(0, 0, 0.5)',
+        textDecorationLine: 'line-through',
+    },
 });
