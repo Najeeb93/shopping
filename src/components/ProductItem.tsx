@@ -83,4 +83,10 @@ const styles = StyleSheet.create({
         color: 'rgba(0, 0, 0.5)',
         textDecorationLine: 'line-through',
     },
+    discountPrice: {
+        fontSize: 18,
+        marginRight: 4,
+        fontWeight: '600',
+        color: '#000000',
+    },
 });
